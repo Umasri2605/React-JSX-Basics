@@ -11,17 +11,16 @@
 <body>
     <id id="d1"></id>
     <script type="text/babel">
+    // Print array values in sorted order in list items in JSX
     var ar=[45,27,89,36,10,58,11,26,7];
     var jsx=<ul>
         {
              ar.sort(function(a,b){
-              return 1;
-              {
-                <li>{a<b}</li>
+              if(a>b){
+                return 1;
               }
-              return -1;
-              {
-                <li>{a>b}</li>
+              else{
+                return -1;
               }
              })
             }
