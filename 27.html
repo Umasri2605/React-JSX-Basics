@@ -11,6 +11,7 @@
 <body>
     <id id="d1"></id>
     <script type="text/babel">
+    // Print array strings ol and ul
      var students=["Uma","Pravallika","Raji","Mounika","Ramya","Chinmay","Radhika","Navya"]
      var jsxl=<ul>
        {
@@ -19,6 +20,13 @@
         })
        }   
     </ul>
+    var jsxl=<ol>
+       {
+        students.map(function(student){
+            return<li>{student}</li>
+        })
+       }   
+    </ol>
     ReactDOM.render(jsxl,document.getElementById("d1"));
     </script>
 </body>
