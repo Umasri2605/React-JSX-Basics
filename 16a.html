@@ -11,6 +11,7 @@
 <body>
     <id id="d1"></id>
     <script type="text/babel">
+    // Even or odd by conditional styling
     var a=+prompt()    
     var jsxh1=<h1 style={a%2==0 ?{color:"red"} :{color:"green"}}>Entered Value Here:{a}</h1>
     ReactDOM.render(jsxh1,document.getElementById("d1"));
