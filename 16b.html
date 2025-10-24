@@ -11,6 +11,7 @@
 <body>
   <id id="d1"></id> 
   <script type="text/babel">
+    // conditional styling
     var a=+prompt()    
     var jsxh1=<h1>Entered Value Here: <span style={a%2==0 ?{color:"red"} :{color:"green"}}>{a}</span></h1>
     ReactDOM.render(jsxh1,document.getElementById("d1"));
