@@ -11,12 +11,15 @@
 <body>
     <id id="d1"></id>
     <script type="text/babel">
+    // Print array values in h1 elements 
     var ar=[12,48,39,27,87,67,89,20,76]
    for(var i=0;i<=ar.length-1;i++)
    var jsx=<div>
        {
         ar.map(function(a){
-          return<li>{a}</li>
+          return<li>
+            <h1>{a}</h1>
+            </li>
         })
         
         
